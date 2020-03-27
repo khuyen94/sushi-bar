@@ -29,6 +29,7 @@ namespace Repository.Pattern.Repositories
         {
             _context = context;
             _dbSet = context.Set<TEntity>();
+            
         }
 
         public virtual TEntity Find(params object[] keyValues)
